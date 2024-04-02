@@ -18,6 +18,18 @@ namespace WCFLogicaPrimerServicio
             return "Mi primer WCF, Biencenido " + nombre;
         }
 
+        public List<int> GetTablaMultiplicar(int numero)
+        {
+            List<int> tabla = new List<int>();
+            for (int i = 1; i <= 10; i++)
+            {
+                int resultado = numero * i;
+                tabla.Add(resultado);
+            }
+
+            return tabla;
+        }
+
         public string MetodoInvisible()
         {
             return "No sirvo para nada";
